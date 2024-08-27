@@ -28,9 +28,10 @@ ______________________________
 git clone https://github.com/InfoSecWarrior/Offensive-Payloads.git 
 ```
 ____________________________
-----  # Web Cache Poisoning Params -----
+# Web Cache Poisoning Params -----
+ #### ngrok http 80 
 ```
-X-Forwarded-Host: ngrok.com
+X-Forwarded-Host: ngrok.com  
 X-Host: ngrok.com
 X-Forwarded-Server: ngrok.com 
 ```
