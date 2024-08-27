@@ -27,7 +27,7 @@ ______________________________
 ```
 git clone https://github.com/InfoSecWarrior/Offensive-Payloads.git 
 ```
-
+_______________________________
 ```
 nuclei -u https://example.com -severity medium,high,critical
 ```
