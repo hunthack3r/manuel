@@ -32,10 +32,10 @@ _______________________________
 nuclei -u https://example.com -severity medium,high,critical
 ```
 ```
-find . -type f -exec cat {} + 2>/dev/null | sort | uniq | anew | uro | nuclei  -t /nuclei-templates/ --severity medium,high,critical
+find . -type f -exec cat {} + 2>/dev/null | sort | uniq | anew | uro | httpx-toolkit -mc 200  | nuclei  -t /nuclei-templates/ --severity medium,high,critical
 ```
 ```
-find . -type f -exec cat {} + 2>/dev/null |  gf lfi | nuclei  -t /nuclei-templates/http/vulnerabilities/generic/generic-linux-lfi.yaml -c 30
+find . -type f -exec cat {} + 2>/dev/null |  gf lfi | httpx-toolkit -mc 200 | nuclei  -t /nuclei-templates/http/vulnerabilities/generic/generic-linux-lfi.yaml -c 30
 ```
 ____________________________
 # Web Cache Poisoning Params -----
