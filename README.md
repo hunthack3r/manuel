@@ -27,10 +27,13 @@ ______________________________
 ```
 git clone https://github.com/InfoSecWarrior/Offensive-Payloads.git 
 ```
----- Web Cache Poisoning Params -----
+____________________________
+----  # Web Cache Poisoning Params -----
+```
 X-Forwarded-Host: ngrok.com
 X-Host: ngrok.com
 X-Forwarded-Server: ngrok.com 
+```
 _____________________________
 
 ### link-gopher : Web sitesindeki linkleri cikartir tek tek elle kopyala yapistir yapmazsin
