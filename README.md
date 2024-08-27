@@ -27,6 +27,13 @@ ______________________________
 ```
 git clone https://github.com/InfoSecWarrior/Offensive-Payloads.git 
 ```
+
+```
+nuclei -u https://example.com -severity medium,high,critical
+```
+```
+find . -type f -exec cat {} + 2>/dev/null |  gf lfi | nuclei  -t /nuclei-templates/http/vulnerabilities/generic/generic-linux-lfi.yaml -c 30
+```
 ____________________________
 # Web Cache Poisoning Params -----
  #### ngrok http 80 
