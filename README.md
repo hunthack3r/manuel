@@ -205,6 +205,7 @@ https://github.com/reddelexc/hackerone-reports
 
 {"username":{"$in":[
 "admin",
-"ADMIN"]},"password":{
+"ADMIN",
+"wiener"]},"password":{ // bu kisimda bize hep invalid dondururken 200 verdi fakat icinde wiener kondugu zaman 302 found verdi ve biz enumeraion etmis olduk/
 "$ne":"dgdfdffdfdfdf"}}
 ```
