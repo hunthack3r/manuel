@@ -201,8 +201,7 @@ https://github.com/reddelexc/hackerone-reports
 ```
 # Login NoSQL Payloads
 
-```
-
+```json
 {"username":{"$in":[
 "admin",
 "ADMIN",
