@@ -189,3 +189,13 @@ ${{3*3}}
 https://github.com/reddelexc/hackerone-reports
 ```
 
+# NoSQL Payloads Basic:
+```
+'&& 1 == 1
+'&& '1' == '1
+' || 1==1
+' || '1'== '1
+' || 1 ||
+' || 1 || '
+' && '1' == '1
+```
