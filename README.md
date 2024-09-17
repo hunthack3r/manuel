@@ -215,8 +215,15 @@ https://github.com/reddelexc/hackerone-reports
 // w ile baslasin dedik ve bize wiener kullanicisini response da dondurdu Location: basliginda ve altindaki session bilgileri o kullanicinin oluyor response daki
 //regex e a harfini yazdik ve gelen bilgideki sessionu aldik ve icerdeyiz
 ```
+svg file upload vuln
+```
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  <a xlink:href="http://go824ds8qmcbpz66m6qo29ria9g04qsf.oastify.com/pic.png">
+    <text x="10" y="25">my text</text>
+  </a>
+</svg>
 
-
+```
 ## Console Settings
 ```
 # ~/.bashrc: executed by bash(1) for non-login shells.
