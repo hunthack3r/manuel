@@ -216,7 +216,7 @@ https://github.com/reddelexc/hackerone-reports
 //regex e a harfini yazdik ve gelen bilgideki sessionu aldik ve icerdeyiz
 ```
 svg file upload vuln
-```
+```xml
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
   <a xlink:href="http://go824ds8qmcbpz66m6qo29ria9g04qsf.oastify.com/pic.png">
     <text x="10" y="25">my text</text>
