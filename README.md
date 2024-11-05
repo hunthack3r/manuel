@@ -386,3 +386,8 @@ export PATH=$PATH:$HOME/go/bin
 [ "$(id -u)" -ne 0 ] && exec sudo -i
 
 ```
+
+```
+log4j scanner icin : https://www.cozumpark.com/cisa-log4j-zafiyeti-icin-tarayici-yayinladi-kurulum-ve-kullanimi/
+Guzel
+```
